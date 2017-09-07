@@ -40,7 +40,8 @@ public class Person2 {
             int randPicker = (int)(Math.random()*listCh.size());
             output.append(listCh.remove(randPicker));
         }
-        return output.toString();
+        String result = output.toString();
+        return result;
 	}
 	/**
 	 * Return a string rep of this object
