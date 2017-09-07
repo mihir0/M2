@@ -43,6 +43,10 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
-	  return null;
+		String reversedIn = "";
+		for (int i = input.length() - 1; i >= 0; i--) {
+			reversedIn = reversedIn + input.charAt(i);
+		}
+	  return reversedIn;
 	}
 }
