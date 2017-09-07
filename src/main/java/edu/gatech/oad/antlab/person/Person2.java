@@ -1,5 +1,4 @@
 package edu.gatech.oad.antlab.person;
-import java.util.*;
 /**
  *  A simple class for person 2
  *  returns their name and a
@@ -31,17 +30,12 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  List<Character> listCh = new ArrayList<Character>();
-        for(char c:input.toCharArray()){
-            listCh.add(c);
-        }
-        StringBuilder output = new StringBuilder(input.length());
-        while(listCh.size()!=0){
-            int randPicker = (int)(Math.random()*listCh.size());
-            output.append(listCh.remove(randPicker));
-        }
-        String result = output.toString();
-        return result;
+	  String str = "";
+      for(int i = input.length() - 1; i >= 0; i--) {
+        char ch = input.charAt(i);
+        str = str + ch;
+      }
+        return str;
 	}
 	/**
 	 * Return a string rep of this object
