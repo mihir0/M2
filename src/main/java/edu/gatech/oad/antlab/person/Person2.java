@@ -36,7 +36,8 @@ public class Person2 {
         char ch = input.charAt(i);
         str = str + ch;
       }
-        return str;
+	input = str;
+        return input;
 	}
 	/**
 	 * Return a string rep of this object
