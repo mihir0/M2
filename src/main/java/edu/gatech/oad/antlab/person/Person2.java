@@ -1,6 +1,5 @@
 package edu.gatech.oad.antlab.person;
 import java.util.*;
-import java.lang.*
 /**
  *  A simple class for person 2
  *  returns their name and a
