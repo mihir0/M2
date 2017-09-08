@@ -30,17 +30,13 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  String str = "";
-      for(int i = input.length() - 1; i >= 0; i--) {
-        char ch = input.charAt(i);
-        str = str + ch;
-      }
-<<<<<<< HEAD
-        return str;
-=======
-	input = str;
-        return input;
->>>>>>> a21fcfb9bb6bec59888a221ae6b4e739a60e88cb
+	List<String> elements = Arrays.asList(input.split(""));
+    	Collections.shuffle(elements);
+    	String mixed = "";
+    	for (String letter : elements) {
+           mixed += letter;
+       	}
+    	   return mixed; 
 	}
 	/**
 	 * Return a string rep of this object
