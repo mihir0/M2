@@ -31,10 +31,10 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 	  //Person 1 put your implementation here
-            String ans;
-            for (int i = 2 % input.length, b = 0; 
+            String ans = "";
+            for (int i = 2 % input.length(), b = 0; 
                     i != 2 || b == 0; 
-                    i = ++i % input.length, b = 1) {
+                    i = ++i % input.length(), b = 1) {
                 ans += input.charAt(i);
             }
             return ans;
