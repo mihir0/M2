@@ -35,7 +35,12 @@ public class Person2 {
         char ch = input.charAt(i);
         str = str + ch;
       }
+<<<<<<< HEAD
         return str;
+=======
+	input = str;
+        return input;
+>>>>>>> a21fcfb9bb6bec59888a221ae6b4e739a60e88cb
 	}
 	/**
 	 * Return a string rep of this object
