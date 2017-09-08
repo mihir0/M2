@@ -1,4 +1,5 @@
 package edu.gatech.oad.antlab.person;
+import java.util.*;
 /**
  *  A simple class for person 2
  *  returns their name and a
@@ -36,7 +37,7 @@ public class Person2 {
     	for (String letter : elements) {
            mixed += letter;
        	}
-    	   return mixed; 
+    	   return mixed;
 	}
 	/**
 	 * Return a string rep of this object
