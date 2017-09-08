@@ -31,9 +31,7 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-
 	List<String> elements = Arrays.asList(input.split(""));
-
     	Collections.shuffle(elements);
     	String mixed = "";
     	for (String letter : elements) {
@@ -41,7 +39,6 @@ public class Person2 {
            mixed += letter;
 
        	}
-
     	   return mixed;
 	}
 	/**
