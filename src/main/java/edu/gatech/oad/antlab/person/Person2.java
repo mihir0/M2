@@ -6,6 +6,7 @@ import java.util.*;
  *  modified string
  *
  * @author Bob
+ * @author Fitsum Seyoum
  * @version 1.1
  */
 public class Person2 {
