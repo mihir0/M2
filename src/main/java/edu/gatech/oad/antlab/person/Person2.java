@@ -6,6 +6,7 @@ import java.util.*;
  *  modified string
  *
  * @author Bob
+ * @author Fitsum Seyoum
  * @version 1.1
  */
 public class Person2 {
@@ -30,7 +31,9 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
+
 	List<String> elements = Arrays.asList(input.split(""));
+
     	Collections.shuffle(elements);
     	String mixed = "";
     	for (String letter : elements) {
@@ -38,6 +41,7 @@ public class Person2 {
            mixed += letter;
 
        	}
+
     	   return mixed;
 	}
 	/**
